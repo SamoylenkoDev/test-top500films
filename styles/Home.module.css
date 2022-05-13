@@ -1,0 +1,70 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+}
+.container h2{
+    margin: 50px 0 80px 0;
+}
+.blocks{
+    display: flex;
+    width: 1350px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+}
+.navigation p{
+    font-size: 20px;
+    background: #333;
+    padding: 4px 20px;
+    border-radius: 100px;
+    color: white;
+}
+.navigation button{
+    font-size: 25px;
+    cursor: pointer;
+}
+.navigation button:first-child{
+    transform: rotate(45deg);
+}
+
+.navigation button:last-child{
+    transform: rotate(225deg);
+    margin-top: 1px;
+}
+
+.favourite{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-shadow: 0 0 10px 5px rgb(0,0,0, .2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.favourite img{
+    width: 30px;
+}
+@media screen and (max-width: 1440px){
+    .blocks{
+        width: 1000px;
+    }
+}
+@media screen and (max-width: 1080px){
+    .blocks{
+        width: 650px;
+    }
+}
+@media screen and (max-width: 700px){
+    .blocks{
+        width: 300px;
+    }
+}
